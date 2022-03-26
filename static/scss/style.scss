@@ -1,0 +1,14 @@
+@import "default_style.scss";
+body{
+background-color: #222;
+}
+@mixin fstyle($size, $col){
+	font-size: $size;
+	color: $col;
+	line-height: 35px;
+
+}
+.text{
+	@include fstyle(30px, red);
+	p{margin: 0px,0px,30px,0px;	}
+}
